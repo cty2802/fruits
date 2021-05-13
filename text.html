@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>!!!!!!!!!!!!!</title>  
+  <link rel="stylesheet" href="style.css"> 
+  <script src="main.js"></script>
+  <script src = "data.js"></script>
+  <script>   
+  </script> 
+</head>
+<body onload = "initPage()">  
+  <h1>FRUITS</h1>        
+  <div id="add" style="display: inline-block;">    
+    <input type="text" id="newFruit" placeholder="New fruit...">   
+    <span id="selectTypeForAdd"></span>
+    <input type="button" id="addButton" onclick = "addFruits (this)" value="add">  
+  </div>  
+  <table id = "myList">
+    <thead id = "thead">
+      <tr>
+        <td>Fruits 
+          <input type="text" id="input" placeholder="Search..." onkeyup = "search(this)" >        
+          <input type="button" id = "sort" onclick = "sortFruits(this)" value="sort &#8743"></td>            
+        <td id="selectTypeforSort" onchange="selectTypeForSort(this)"></td> 
+        <td>Buttons</td>    
+      </tr>      
+    </thead>
+    <tbody id="filling">           
+    </tbody>    
+  </table>              
+</body>
+</html>
+    
+
